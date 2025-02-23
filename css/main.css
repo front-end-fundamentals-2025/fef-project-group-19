@@ -1,0 +1,26 @@
+#logo {
+  font-family: "Irish Grover", serif;
+  font-size: 5rem;
+  color: rgb(131, 40, 40);
+}
+
+.category-image1 {
+  width: 100%;
+}
+
+.category-image2 {
+  width: 100%;
+}
+
+.category-image3 {
+  width: 212%;
+}
+
+@media screen and (min-width: 520px) {
+  .category-container {
+    display: grid;
+    grid-template-areas:
+      "img img"
+      "img img";
+  }
+}
