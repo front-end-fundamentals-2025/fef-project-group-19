@@ -75,34 +75,8 @@ a {
 }
 
 /*dropdown*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: transparent;
-}
-
-li {
-  float: left;
-}
-
-li a,
-.dropbtn {
-  display: inline-block;
-  color: rgb(66, 57, 65);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover,
-.dropdown:hover.dropbtn {
-  background-color: rgb(236, 231, 221);
-}
-
-li.dropdown {
-  display: inline-block;
+li.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .dropdown-content {
@@ -124,10 +98,6 @@ li.dropdown {
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
-}
-
-.dropdown:hover.dropdown-content {
-  display: block;
 }
 
 /*new items button*/
@@ -165,7 +135,7 @@ body {
 }
 
 .cart-icon {
-  margin-right: 8px;
+  margin-left: 100px;
 }
 
 .item-count {
