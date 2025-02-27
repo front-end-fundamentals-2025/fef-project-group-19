@@ -129,3 +129,53 @@ li.dropdown {
 .dropdown:hover.dropdown-content {
   display: block;
 }
+
+/*new items button*/
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.button {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: red;
+}
+
+.cart-button:hover {
+  background-color: white;
+}
+
+.cart-icon {
+  margin-right: 8px;
+}
+
+.item-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 50%;
+}
