@@ -7,7 +7,7 @@
 #logo {
   font-family: "Irish Grover", serif;
   font-size: 5rem;
-  color: rgb(131, 40, 40);
+  color: rgb(155, 77, 92);
   margin: 0%;
 }
 
@@ -34,7 +34,7 @@ a {
 
 .slider {
   position: relative;
-  width: 1500px;
+  width: 2000px;
   height: 800px;
   overflow: hidden;
 }
@@ -116,18 +116,18 @@ body {
 
 .button {
   display: inline-block;
-  background-color: red;
+  white-space: nowrap;
+  background-color: rgb(140, 176, 135);
   color: white;
-  padding: 15px 30px;
-  font-size: 18px;
-  font-weight: bold;
+  padding: 15px 1000px;
+  font-size: 25px;
   text-decoration: none;
   border-radius: 8px;
   transition: background-color 0.3s ease-in-out;
 }
 
 .button:hover {
-  background-color: red;
+  background-color: rgb(131, 40, 40);
 }
 
 .cart-button:hover {
@@ -138,14 +138,26 @@ body {
   margin-left: 100px;
 }
 
-.item-count {
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  background-color: red;
+.bigpicture {
+  width: 1600px;
+  height: 500px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.button2 {
+  display: inline-block;
+  white-space: nowrap;
+  background-color: rgb(140, 176, 135);
   color: white;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 4px 8px;
-  border-radius: 50%;
+  padding: 15px 1000px;
+  font-size: 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
 }
