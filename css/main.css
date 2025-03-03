@@ -35,7 +35,7 @@ a {
 
 .slider {
   position: relative;
-  width: 2000px;
+  width: 100vw;
   height: 800px;
   overflow: hidden;
 }
@@ -120,15 +120,16 @@ body {
   white-space: nowrap;
   background-color: rgb(140, 176, 135);
   color: white;
-  padding: 15px 1000px;
+  padding: 15px;
+  width: 100vw;
   font-size: 25px;
   text-decoration: none;
-  border-radius: 8px;
+  text-align: center;
   transition: background-color 0.3s ease-in-out;
 }
 
 .button:hover {
-  background-color: rgb(131, 40, 40);
+  background-color: rgb(140, 176, 135);
 }
 
 .cart-button:hover {
@@ -141,8 +142,8 @@ body {
 
 /*flower pic*/
 .bigpicture {
-  width: 1800px;
-  height: 500px;
+  width: 100vw;
+  height: 38vw;
 }
 
 .container2 {
@@ -161,6 +162,7 @@ body {
   width: 100vw;
   font-size: 25px;
   text-decoration: none;
+  text-align: center;
   border: none;
   transition: background-color 0.3s ease-in-out;
 }
@@ -173,57 +175,71 @@ body {
 }
 
 .banner-container {
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   background-color: rgb(236, 231, 221);
   padding: 10px 0;
+  display: flex;
+  width: calc(100% * 3);
+  color: rgb(155, 77, 92);
+  font-size: 20px;
+  animation: slideShow 40s infinite linear;
+  position: relative;
+  top: 40px;
 }
 
-.moving-banner {
+.moving-banner p {
   display: inline-block;
   white-space: nowrap;
-  animation: movebanner 30s linear infinite;
+  animation: movebanner 200s linear infinite;
   font-size: 20px;
   color: rgb(155, 77, 92);
   background-color: rgb(236, 231, 221);
   padding: 5px;
 }
 
-.moving-banner p {
+.moving-banner {
   display: inline-block;
+  display: flex;
+  width: 100vw;
+  animation: slideShow 30s infinite linear;
 }
 
 @keyframes movebanner {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
+  }
+  16.6% {
+    transform: translateX(-500px);
+  }
+  33.3% {
+    transform: translateX(-1000px);
+  }
+  50% {
+    transform: translateX(-1500px);
+  }
+  66.6% {
+    transform: translateX(-2000px);
+  }
+  83.3% {
+    transform: translateX(-2500px);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-3000px);
   }
-}
-
-p {
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-top: 20px;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.column {
-  flex: 1;
-  padding: 10px;
-}
-
-p {
-  margin: 5px 0;
 }
 
 /*footer*/
 footer {
   margin-top: 3rem;
   border-top: 1px solid rgb(66, 57, 57);
+}
+
+.text {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  text-align: start;
+  margin-left: 20px;
+  line-height: 30px;
 }
