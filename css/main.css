@@ -269,7 +269,7 @@ footer {
 /*tops page*/
 .tops {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1fr);
   gap: 10px;
 }
 
@@ -302,4 +302,30 @@ footer {
 .options1 {
   margin-top: 20px;
   margin-left: 10px;
+}
+
+/*responsive*/
+
+@media screen and (min-width: 500px) {
+  .tops {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .tops {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .header {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .header {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
