@@ -20,3 +20,33 @@ function addToCart(event) {
 document.querySelectorAll(".add-to-cart").forEach((button) => {
   button.addEventListener("click", addToCart);
 });
+
+function renderCart() {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const cartContainer = document.getElementById("cart-items");
+
+  cartContainer.innerHTML = "";
+
+  if (cart.length === 0) {
+    cartContainer.innerHTML = "Your cart is empty.";
+    return;
+  }
+
+  cart.forEach((item) => {
+    const itemElement = document.createElement("div");
+    itemElement.classList.add("cart-item");
+
+    itemElement.innerHTML = `
+   <img src="${item.itemImage}" alt="${item.itemName}" />
+  <p>${item.itemName}</p>
+  `;
+
+    cartContainer.appendChild(itemElement);
+  });
+}
+function clearCart() {
+  localStorage.removeItem("cart");
+  renderCart();
+}
+
+renderCart();

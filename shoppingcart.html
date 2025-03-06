@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
     <link rel="stylesheet" href="css/main.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap"
       rel="stylesheet"
     />
+    <title>Timeless</title>
   </head>
   <body>
     <header>
@@ -19,9 +21,19 @@
           <a href="website.html"><li>Home</li></a>
           <a href="clothes.html"><li>Clothes</li></a>
           <a href="shoppingcart.html"><li>Shopping Cart</li></a>
-         
         </ul>
       </nav>
     </header>
+
+    <main>
+      <h1>Your Shopping Cart</h1>
+      <div id="cart-items"></div>
+      <button onclick="clearCart()">Clear Cart</button>
+    </main>
+
+    <footer>
+      <p>©️ Timeless 2025</p>
+    </footer>
+    <script src="website.js"></script>
   </body>
 </html>
