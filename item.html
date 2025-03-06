@@ -12,74 +12,85 @@
     />
     <title>Timeless</title>
   </head>
-  <header>
-    <p id="logo">Timeless</p>
-    <nav>
-      <ul>
-        <li><a href="website.html">Home</a></li>
-        <li class="dropdown">
-          <a href="clothes.html">Tops</a>
-          <div class="dropdown-content">
-            <a href="#">Long sleeve</a>
-            <a href="#">T-shirts</a>
-            <a href="#">Blouses</a>
-            <a href="#">Sweaters</a>
-            <a href="#">Cardigan</a>
-            <a href="#">Jackets</a>
-          </div>
-        </li>
-
-        <li class="dropdown">
-          <a href="#">Bottoms</a>
-          <div class="dropdown-content">
-            <a href="#">Jeans</a>
-            <a href="#">Pants</a>
-            <a href="#">Skirts</a>
-            <a href="#">Shorts</a>
-          </div>
-        </li>
-
-        <li class="dropdown">
-          <a href="#">Accessories</a>
-          <div class="dropdown-content">
-            <a href="#">Jewerlly</a>
-            <a href="#">Hair accessories</a>
-            <a href="#">Bags</a>
-          </div>
-        </li>
-        <a href="shoppingcart.html" class="cart-button">
-          <span class="cart-icon">🛒</span>
-        </a>
-      </ul>
-    </nav>
-  </header>
   <body>
-    <div class="image-gallery">
-      <img src="img/top1.jpg" alt="top white" />
-      <img src="img/top1.jpg" alt="top white" />
-      <img src="img/top1.jpg" alt="top white" />
-      <img src="img/top1.jpg" alt="top white" />
-    </div>
-    <img
-      id="mainImage"
-      src="img/top1.jpg"
-      alt="Outfit white"
-      class="main-image"
-    />
-    <div class="product-details">
-      <h1 class="product-title">White top</h1>
-      <p class="price">200 SEK</p>
-      <p class="description">White top made of lace</p>
-      <div class="size-selector">
-        <label class="label" for="size">Choose Size:</label>
-        <select id="size">
-          <option value="S">Small</option>
-          <option value="M">Small</option>
-          <option value="L">Small</option>
-          <option value="XL">Small</option>
-        </select>
+    <header>
+      <p id="logo">Timeless</p>
+      <nav>
+        <ul>
+          <li><a href="website.html">Home</a></li>
+          <li class="dropdown">
+            <a href="clothes.html">Tops</a>
+            <div class="dropdown-content">
+              <a>Long sleeve</a>
+              <a>T-shirts</a>
+              <a>Blouses</a>
+              <a>Sweaters</a>
+              <a>Cardigan</a>
+              <a>Jackets</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a>Bottoms</a>
+            <div class="dropdown-content">
+              <a>Jeans</a>
+              <a>Pants</a>
+              <a>Skirts</a>
+              <a>Shorts</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a>Accessories</a>
+            <div class="dropdown-content">
+              <a>Jewerlly</a>
+              <a>Hair accessories</a>
+              <a>Bags</a>
+            </div>
+          </li>
+
+          <li>
+            <a href="shoppingcart.html" class="cart-button">
+              <span class="cart-icon">🛒</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container3">
+      <div class="image-gallery">
+        <img src="img/item1.jpg" alt="top white" onclick="changeImage(this)" />
+        <img src="img/item2.jpg" alt="top white" onclick="changeImage(this)" />
+        <img src="img/item3.jpg" alt="top white" onclick="changeImage(this)" />
+        <img src="img/item4.jpg" alt="top white" onclick="changeImage(this)" />
       </div>
-      <a href="#" class="buy-btn">Buy Now</a>
+      <img
+        id="mainImage"
+        src="img/top4.jpg"
+        alt="Outfit white"
+        class="main-image"
+      />
+      <div class="product-details">
+        <h1 class="product-title">Grey top</h1>
+        <p class="price">200 SEK</p>
+        <p class="description">Cute grey sweater top</p>
+        <div class="size-selector">
+          <label class="label" for="size">Choose Size:</label>
+          <select id="size">
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">Extra Large</option>
+          </select>
+        </div>
+        <a href="shoppingcart.html" class="buy-btn" onclick="addToCart()"
+          >Buy Now</a
+        >
+      </div>
     </div>
+    <footer>
+      <p>©️ Timeless 2025</p>
+    </footer>
+    <script src="website.js"></script>
   </body>
 </html>

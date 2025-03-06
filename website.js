@@ -3,6 +3,9 @@ function addToCart(event) {
   const item = button.getAttribute("data-item");
   const image = button.getAttribute("data-image");
 
+  console.log("Item:", item);
+  console.log("Image:", image);
+
   const cartItem = {
     itemName: item,
     itemImage: image,
@@ -44,9 +47,14 @@ function renderCart() {
     cartContainer.appendChild(itemElement);
   });
 }
+
 function clearCart() {
   localStorage.removeItem("cart");
   renderCart();
 }
 
 renderCart();
+
+function changeImage(clickedImage) {
+  document.getElementById("mainImage").src = clickedImage.src;
+}
