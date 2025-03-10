@@ -10,6 +10,7 @@
   color: rgb(155, 77, 92);
   margin: 0%;
   margin-left: 10px;
+  -webkit-text-stroke: 1px  rgb(109, 56, 67); 
 }
 
 header {
@@ -133,7 +134,7 @@ body {
 }
 
 .cart-button:hover {
-  background-color: white;
+  background-color: rgb(236, 231, 221);
 }
 
 .cart-icon {
