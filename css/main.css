@@ -10,7 +10,7 @@
   color: rgb(155, 77, 92);
   margin: 0%;
   margin-left: 10px;
-  -webkit-text-stroke: 1px  rgb(109, 56, 67); 
+  -webkit-text-stroke: 1px rgb(109, 56, 67);
 }
 
 header {
@@ -315,6 +315,12 @@ footer {
   }
 }
 
+@media (max-width: 350px) {
+  .image-gallery img {
+    width: 100%; 
+  }
+}
+
 @media screen and (min-width: 650px) {
   .tops {
     grid-template-columns: repeat(3, 1fr);
@@ -348,6 +354,53 @@ footer {
     margin-left: 0px;
     margin-bottom: 10px;
   }
+
+  .container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    width: 200%;
+    max-width: 1000px;
+  }
+
+  .image-gallery img:nth-child(1),
+  .image-gallery img:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .image-gallery img:nth-child(3),
+  .image-gallery img:nth-child(4) {
+    grid-row: 2;
+  }
+
+  .main-image {
+    display: none;
+  }
+
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 40px;
+  }
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
 }
 
 /*item page*/
@@ -368,15 +421,16 @@ footer {
 
 .image-gallery {
   display: grid;
-  width: 70%;
-  gap: 10px;
+  width: 100%;
+  gap: 5px;
   overflow-x: auto;
   padding-bottom: 10px;
   background-color: #fff;
+  flex-wrap: wrap;
 }
 
 .image-gallery img {
-  width: 150px;
+  max-width: 150px;
   height: 130px;
   object-fit: cover;
   border-radius: 10px;
@@ -387,6 +441,7 @@ footer {
 .main-image {
   width: 60%;
   height: 90%;
+  height: auto;
   border-radius: 10px;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -434,22 +489,6 @@ select {
 
 .label {
   background-color: #fff;
-}
-
-.buy-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 18px;
-  color: #fff;
-  background: rgb(140, 176, 135);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.buy-btn:hover {
-  background: rgb(118, 147, 114);
 }
 
 /*responsive*/

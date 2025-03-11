@@ -58,3 +58,11 @@ renderCart();
 function changeImage(clickedImage) {
   document.getElementById("mainImage").src = clickedImage.src;
 }
+
+function toggleGallery() {
+  document.querySelector(".container3").classList.toggle("show-thumbnails");
+}
+
+function changeMainImage(img) {
+  document.getElementById("mainImage").src = img.src;
+}
