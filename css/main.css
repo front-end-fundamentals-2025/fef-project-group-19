@@ -288,6 +288,7 @@ footer {
   margin-top: 20px;
   margin-left: 10px;
   color: rgb(66, 57, 57);
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .options h2 {
@@ -297,6 +298,7 @@ footer {
   border-radius: 5px;
   color: rgb(66, 57, 57);
   background-color: transparent;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .options1 {
@@ -471,4 +473,8 @@ select {
 .cart-item img {
   width: 300px;
   height: auto;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
 }
