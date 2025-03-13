@@ -516,7 +516,7 @@ p {
 }
 
 .login-link {
-  margin-left: 45rem;
+  margin-left: 35rem;
 }
 
 h1 {
@@ -532,5 +532,11 @@ h1 {
 }
 
 button {
-  margin-left: 30px;
+  font-size: 18px; 
+  padding: 10px 15px; 
+  background-color: rgb(140, 176, 135); 
+  color: white; 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer; 
 }
