@@ -138,7 +138,8 @@ body {
 }
 
 .cart-icon {
-  margin-left: 50px;
+  margin-left: 60px;
+  margin-bottom: 30px;
 }
 
 /*flower pic*/
@@ -185,57 +186,52 @@ body {
 }
 
 .banner-container {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   background-color: rgb(236, 231, 221);
   padding: 10px 0;
   display: flex;
-  width: calc(100% * 3);
   color: rgb(155, 77, 92);
   font-size: 20px;
-  animation: slideShow 40s infinite linear;
   position: relative;
   top: 40px;
+  font-family: "Irish Grover", serif;
 }
 
 .moving-banner p {
   display: inline-block;
-  white-space: nowrap;
-  animation: movebanner 200s linear infinite;
   font-size: 20px;
   color: rgb(155, 77, 92);
   background-color: rgb(236, 231, 221);
   padding: 5px;
+  font-family: "Irish Grover", serif;
 }
 
 .moving-banner {
-  display: inline-block;
   display: flex;
-  width: 100vw;
-  animation: slideShow 30s infinite linear;
+  white-space: nowrap;
+  animation: movebanner 90s infinite linear;
+  font-family: "Irish Grover", serif;
 }
 
 @keyframes movebanner {
   0% {
     transform: translateX(0%);
   }
-  16.6% {
-    transform: translateX(-500px);
+  20% {
+    transform: translateX(-33.33%);
   }
-  33.3% {
-    transform: translateX(-1000px);
+  40% {
+    transform: translateX(-66.66%);
   }
-  50% {
-    transform: translateX(-1500px);
+  60% {
+    transform: translateX(-100%);
   }
-  66.6% {
-    transform: translateX(-2000px);
-  }
-  83.3% {
-    transform: translateX(-2500px);
+  80% {
+    transform: translateX(-133.33%);
   }
   100% {
-    transform: translateX(-3000px);
+    transform: translateX(-166.66%);
   }
 }
 
@@ -294,7 +290,7 @@ footer {
 
 .options h2 {
   border: 2px solid;
-  border-color: rgb(127, 146, 147);
+  border-color: rgb(115, 65, 51);
   padding: 5px 10px;
   border-radius: 5px;
   color: rgb(66, 57, 57);
@@ -317,7 +313,7 @@ footer {
 
 @media (max-width: 350px) {
   .image-gallery img {
-    width: 100%; 
+    width: 100%;
   }
 }
 
@@ -517,4 +513,24 @@ select {
 
 p {
   font-family: "Open Sans", sans-serif;
+}
+
+.login-link {
+  margin-left: 45rem;
+}
+
+h1 {
+  margin-left: 10px;
+}
+
+.id {
+  margin-left: 10px;
+}
+
+#cart-items {
+  margin-left: 30px;
+}
+
+button {
+  margin-left: 30px;
 }
